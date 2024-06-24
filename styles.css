@@ -1,6 +1,7 @@
 * {
-  margin:0px;
-  padding:0px;
+  margin:30px;
+  padding:30px;
+  background-color: gray ;
 }
 
 #octocat {
@@ -9,9 +10,28 @@
   margin: 50px auto;
 }
 
+.aasd6574 {
+  width: 160px;
+  height: 120px;
+  background-color: red;
+  position: relative;
+  animation-name: animacio;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
 p {
   display: block;
   width: 400px;
   margin: 50px auto;
   font: 30px Monaco,"Courier New","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+}
+
+@keyframes animacio {
+  0%   {background-color:red; left:0px; top:0px;}
+  20%  {background-color:yellow; left:400px; top:0px;}
+  40%  {background-color:blue; left:400px; top:200px;}
+  60%  {background-color:green; left:-400px; top:200px;}
+  80%  {background-color:red; left: -400px; top: 0px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
